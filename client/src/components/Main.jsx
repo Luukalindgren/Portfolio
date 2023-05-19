@@ -34,13 +34,13 @@ const Main = () => {
           </h2>
           <div className="flex justify-between pt-4 max-w-[200px] w-full">
             <a href="https://github.com/Luukalindgren">
-              <FaGithub className="cursor-pointer m-2" size={30} />
+              <FaGithub className="cursor-pointer m-2 hover:scale-110 ease-in duration-200" size={30} />
             </a>
             <a href="https://www.linkedin.com/in/luukalindgren/">
-              <FaLinkedin className="cursor-pointer m-2" size={30} />
+              <FaLinkedin className="cursor-pointer m-2 hover:scale-110 ease-in duration-200" size={30} />
             </a>
             <a href="https://www.instagram.com/luukalindgren/">
-              <FaInstagram className="cursor-pointer m-2" size={30} />
+              <FaInstagram className="cursor-pointer m-2 hover:scale-110 ease-in duration-200" size={30} />
             </a>
           </div>
         </div>
