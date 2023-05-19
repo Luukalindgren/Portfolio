@@ -12,6 +12,8 @@ import Contact from './components/Contact'
 // - Make contact form work, maybe change it to email link
 // - Add dark mode
 // - Publish page on Azure or GitHub pages
+// - Add comments to code
+// - Add some animations or other fancy stuff, but keep it simple
 
 
 function App() {
