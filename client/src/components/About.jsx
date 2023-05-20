@@ -10,29 +10,31 @@ const About = () => {
       <h1 className="py-4 text-4xl font-bold text-center text-[#4B1300]">
         About Me
       </h1>
-      <div className="flex flex-block ">
+      <div className="flex gap-2 flex-block">
         <img
           className="w-48 h-48 m-auto rounded-full shadow-lg"
           src={IMG_0549_lowres}
           alt="Profile Picture"
         />
-        <div className="grid flex-auto gap-4 px-8 m-auto sm:grid-cols-3">
+        <div className="grid flex-auto gap-4 m-auto sm:grid-cols-3 sm:pl-2 md:px-8">
           <div>
             <ol className="about-list">
               <h2 className="text-lg font-semibold text-[#4B1300]">
                 Personality
               </h2>
-              <li>Outgoing</li>
               <li>Positive</li>
-              <li>Always learning</li>
+              <li>Analytical</li>
+              <li>Diligent</li>
+              <li>Ambitious</li>
             </ol>
           </div>
           <div>
-            <ol className="about-list">
+            <ol className="about-list ">
               <h2 className="text-lg font-semibold text-[#4B1300]">Skills</h2>
-              <li>Programming 6/5</li>
-              <li>Design 4/5</li>
-              <li>People skills 0/5</li>
+              <li>Javascript</li>
+              <li>React</li>
+              <li>Python</li>
+              <li>Java</li>
             </ol>
           </div>
           <div>
@@ -41,6 +43,7 @@ const About = () => {
               <li>Gym</li>
               <li>Reading</li>
               <li>Disc Golf</li>
+              <li>Tech</li>
             </ol>
           </div>
         </div>
