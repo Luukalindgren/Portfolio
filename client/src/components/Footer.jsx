@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <div
       id="footer"
-      className="w-full p-4 py-16 m-auto md:pl-20 bg-stone-200"
+      className="w-full p-4 py-16 m-auto md:px-20 bg-stone-200"
     >
       <p className="text-center text-stone-500">© 2023 Luuka Lindgren</p>
     </div>

@@ -6,6 +6,23 @@
   scroll-behavior: smooth;
 }
 
+h2 {
+  padding-bottom: 2rem;
+  font-size: 2.25rem /* 36px */;
+  line-height: 2.5rem /* 40px */;
+  font-weight: 700;
+  text-align: center;
+  --tw-text-opacity: 1;
+  color: rgb(75 19 0 / var(--tw-text-opacity));
+}
+
+.section {
+  margin: auto;
+  max-width: 1040px;
+  padding: 4rem 1rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(245 245 244 / var(--tw-bg-opacity));
+}
 
 .about-list {
   min-width: 135px;

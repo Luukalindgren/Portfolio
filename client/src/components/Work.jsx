@@ -43,9 +43,7 @@ const workData = [
 const Work = () => {
   return (
     <div id="work" className="section md:px-20">
-      <h1 className="text-4xl font-bold text-center text-[#4B1300] pb-8">
-        Work
-      </h1>
+      <h2>Work</h2>
       {workData.map((work) => (
         <WorkItem
           key={work.id}

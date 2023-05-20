@@ -12,10 +12,10 @@ const Main = () => {
       />
       <div className="absolute top-0 left-0 w-full h-screen bg-black/50">
         <div className="text-white max-w-[700px] m-auto h-full w-full flex flex-col justify-center items-center ">
-          <h1 className="text-4xl font-bold sm:text-5xl ">
+          <h1 className="text-4xl font-bold text-white sm:text-5xl">
             I'm Luuka Lindgren
           </h1>
-          <h2 className="flex pt-4 text-2xl sm:text-3xl">
+          <h4 className="flex pt-4 text-2xl sm:text-3xl">
             <TypeAnimation
               className="pl-1 text-gray-300 text-l"
               sequence={[
@@ -30,7 +30,7 @@ const Main = () => {
               cursor={true}
               repeat={Infinity}
             />
-          </h2>
+          </h4>
           <div className="flex justify-between pt-4 max-w-[200px] w-full">
             <a href="https://github.com/Luukalindgren">
               <FaGithub

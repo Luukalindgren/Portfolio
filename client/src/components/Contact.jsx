@@ -28,7 +28,6 @@ const Contact = () => {
   return (
     <div id="contact" className="section md:px-20">
       <h2>Contact</h2>
-      <p className="text-center">Currently disabled...</p>
       <form ref={formRef} onSubmit={sendEmail}>
         <div className="w-full gap-4 py-2 ">
           <div className="flex flex-col">

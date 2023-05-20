@@ -3,25 +3,20 @@ import IMG_0549_lowres from "../assets/IMG_0549_lowres.jpg";
 
 const About = () => {
   return (
-    <div
-      id="about"
-      className="max-w-[1040px] m-auto md:pl-20 p-4 py-16 bg-stone-100"
-    >
-      <h1 className="py-4 text-4xl font-bold text-center text-[#4B1300]">
-        About Me
-      </h1>
+    <div id="about" className="section md:px-20">
+      <h2>About Me</h2>
       <div className="flex gap-2 flex-block">
         <img
-          className="w-48 h-48 m-auto rounded-full shadow-lg"
+          className="w-48 h-48 m-auto shadow-lg rounded-3xl"
           src={IMG_0549_lowres}
           alt="Profile Picture"
         />
         <div className="grid flex-auto gap-4 m-auto sm:grid-cols-3 sm:pl-2 md:px-8">
           <div>
             <ol className="about-list">
-              <h2 className="text-lg font-semibold text-[#4B1300]">
+              <h3 className="text-lg font-semibold text-[#4B1300]">
                 Personality
-              </h2>
+              </h3>
               <li>Positive</li>
               <li>Analytical</li>
               <li>Diligent</li>
@@ -30,7 +25,7 @@ const About = () => {
           </div>
           <div>
             <ol className="about-list ">
-              <h2 className="text-lg font-semibold text-[#4B1300]">Skills</h2>
+              <h3 className="text-lg font-semibold text-[#4B1300]">Skills</h3>
               <li>Javascript</li>
               <li>React</li>
               <li>Python</li>
@@ -39,7 +34,7 @@ const About = () => {
           </div>
           <div>
             <ol className="about-list">
-              <h2 className="text-lg font-semibold text-[#4B1300]">Hobbies</h2>
+              <h3 className="text-lg font-semibold text-[#4B1300]">Hobbies</h3>
               <li>Gym</li>
               <li>Reading</li>
               <li>Disc Golf</li>

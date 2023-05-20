@@ -7,14 +7,8 @@ import LLImg from "../assets/LL.png";
 
 const Projects = () => {
   return (
-    <div
-      id="projects"
-      className="max-w-[1040px] m-auto md:pl-20 p-4 py-16 bg-stone-100"
-    >
-      <h1 className="text-4xl font-bold text-center text-[#4B1300]">
-        Projects
-      </h1>
-      <p className="py-8 text-center"></p>
+    <div id="projects" className="section md:px-20">
+      <h2>Projects</h2>
       <div className="grid gap-12 sm:grid-cols-2">
         <ProjectItem
           img={kisakalenteriImg}
