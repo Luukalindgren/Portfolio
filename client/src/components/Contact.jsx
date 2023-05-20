@@ -1,60 +1,78 @@
-import React from "react";
+import React, { useRef } from "react";
+import emailjs from "@emailjs/browser";
 
 const Contact = () => {
+  const formRef = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_7gdn3hr",
+        "template_t4wphm9",
+        formRef.current,
+        "b1NwTuFw7ZhnHVzC8"
+      )
+      .then(
+        (result) => {
+          console.log("Email sent successfully!");
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+    e.target.reset();
+  };
+
   return (
-    <div id="contact" className="max-w-[1040px] m-auto md:pl-20 p-4 py-16 bg-stone-100">
-      <h1 className="py-4 text-4xl font-bold text-center text-[#4B1300]">
-        Contact
-      </h1>
-      <p className="text-center py-4">Currently not doing anything...</p>
-      <form action="" method="POST" encType="multipart/form-data">
-        <div className="grid md:grid-cols-2 gap-4 w-full py-2">
+    <div id="contact" className="section md:px-20">
+      <h2>Contact</h2>
+      <p className="text-center">Currently disabled...</p>
+      <form ref={formRef} onSubmit={sendEmail}>
+        <div className="w-full gap-4 py-2 ">
           <div className="flex flex-col">
-            <label className="uppercase text-sm py-2">Name:</label>
+            <label className="py-2 text-sm uppercase">Name:</label>
             <input
-              className="border-2 rounded-lg p-3 flex border-gray-300"
+              className="flex p-3 border-2 border-gray-300 rounded-lg"
               type="text"
-              name="name"
-            />
-          </div>
-          <div className="flex flex-col">
-            <label className="uppercase text-sm py-2">Phone:</label>
-            <input
-              className="border-2 rounded-lg p-3 flex border-gray-300"
-              type="number"
-              name="phone"
+              name="user_name"
+              placeholder="Matti Meikäläinen"
             />
           </div>
         </div>
         <div className="flex flex-col py-2">
-          <label className="uppercase text-sm py-2">Email:</label>
+          <label className="py-2 text-sm uppercase">Email:</label>
           <input
-            className="border-2 rounded-lg p-3 flex border-gray-300"
+            className="flex p-3 border-2 border-gray-300 rounded-lg"
             type="email"
-            name="email"
+            name="user_email"
+            placeholder="matti.meikalainen@gmail.com"
           />
         </div>
         <div className="flex flex-col py-2">
-          <label className="uppercase text-sm py-2">Subject:</label>
+          <label className="py-2 text-sm uppercase">Subject:</label>
           <input
-            className="border-2 rounded-lg p-3 flex border-gray-300"
+            className="flex p-3 border-2 border-gray-300 rounded-lg"
             type="text"
             name="subject"
+            placeholder="Job Offer 2023"
           />
         </div>
         <div className="flex flex-col py-2">
-          <label className="uppercase text-sm py-2">Message:</label>
+          <label className="py-2 text-sm uppercase">Message:</label>
           <textarea
-            className="border-2 rounded-lg p-3 border-gray-300"
+            className="p-3 border-2 border-gray-300 rounded-lg"
             rows="10"
             name="message"
+            placeholder="Hello Luuka, we would like to offer you a job at..."
           />
         </div>
         <button
-          disabled={true}
-          className="bg-[#4B1300]/60 text-white mt-4 w-full p-4 rounded-lg"
+          type="submit"
+          className="bg-[#4B1300] text-white mt-4 w-full p-4 rounded-lg"
         >
-          Send Message
+          Send Email
         </button>
       </form>
     </div>
