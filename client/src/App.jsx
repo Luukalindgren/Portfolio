@@ -7,11 +7,12 @@ import About from './components/About'
 import Footer from './components/Footer'
 
 // TODO:
-// - Add self portrait and some animated circle around it
-// - Add section for skills, education, and other stuff about me
+// DONE (without animation) Add self portrait and some animated circle around it
+// DONE Add section for skills, education, and other stuff about me
+// - Make pop-up for
 // - Change domain to luuka.software (take it from kisakalenteri project)
-// - Make repetetive Tailwind classes into components
-// - Make contact form work, maybe change it to email link
+// DONE Make repetetive Tailwind classes into components
+// DONE Make contact form work, maybe change it to email link
 // - Add dark mode
 // - Publish page on Azure or GitHub pages
 // - Add comments to code
