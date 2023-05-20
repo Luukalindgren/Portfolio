@@ -36,7 +36,7 @@ const Contact = () => {
               className="flex p-3 border-2 border-gray-300 rounded-lg"
               type="text"
               name="user_name"
-              placeholder="Matti Meikäläinen"
+              placeholder="Bill Gates"
             />
           </div>
         </div>
@@ -46,7 +46,7 @@ const Contact = () => {
             className="flex p-3 border-2 border-gray-300 rounded-lg"
             type="email"
             name="user_email"
-            placeholder="matti.meikalainen@gmail.com"
+            placeholder="bill.gates@microsoft.com"
           />
         </div>
         <div className="flex flex-col py-2">
@@ -64,7 +64,7 @@ const Contact = () => {
             className="p-3 border-2 border-gray-300 rounded-lg"
             rows="10"
             name="message"
-            placeholder="Hello Luuka, we would like to offer you a job at..."
+            placeholder="Hello Luuka, we would like to offer you a job at Microsoft..."
           />
         </div>
         <button
