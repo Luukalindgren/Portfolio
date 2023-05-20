@@ -9,7 +9,7 @@ import Footer from './components/Footer'
 // TODO:
 // DONE (without animation) Add self portrait and some animated circle around it
 // DONE Add section for skills, education, and other stuff about me
-// - Make pop-up for
+// - Make pop-up for sending email (succesfull and error)
 // - Change domain to luuka.software (take it from kisakalenteri project)
 // DONE Make repetetive Tailwind classes into components
 // DONE Make contact form work, maybe change it to email link

@@ -7,11 +7,11 @@ const About = () => {
       <h2>About Me</h2>
       <div className="flex gap-2 flex-block">
         <img
-          className="w-48 h-48 m-auto shadow-lg rounded-3xl"
+          className="w-48 h-48 m-auto shadow-2xl rounded-3xl"
           src={IMG_0549_lowres}
           alt="Profile Picture"
         />
-        <div className="grid flex-auto gap-4 m-auto sm:grid-cols-3 sm:pl-2 md:px-8">
+        <div className="grid flex-auto gap-4 m-auto sm:grid-cols-3 sm:pl-2">
           <div>
             <ol className="about-list">
               <h3 className="text-lg font-semibold text-[#4B1300]">
