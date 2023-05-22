@@ -1,7 +1,10 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
+import Modal from "./Modal";
 
 const Contact = () => {
+  const [showModal, setShowModal] = useState(false);
+
   const formRef = useRef();
 
   const sendEmail = (e) => {
@@ -17,6 +20,7 @@ const Contact = () => {
       .then(
         (result) => {
           console.log("Email sent successfully!");
+          setShowModal(true);
         },
         (error) => {
           console.log(error.text);
@@ -74,6 +78,7 @@ const Contact = () => {
           Send Email
         </button>
       </form>
+      <Modal show={showModal} onClose={() => setShowModal(false)} />
     </div>
   );
 };
