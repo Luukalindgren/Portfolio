@@ -12,9 +12,9 @@ const Projects = () => {
       <div className="grid gap-12 sm:grid-cols-2">
         <ProjectItem
           img={kisakalenteriImg}
-          title="Kisakalenteri"
+          title="Competition calendar"
           desc="MERN -stack project"
-          link="https://github.com/Luukalindgren/Competition-calendar"
+          link="https://luukalindgren.github.io/Competition-calendar/"
         />
         <ProjectItem
           img={discord_bottiImg}
@@ -25,7 +25,7 @@ const Projects = () => {
         <ProjectItem
           img={githubImg}
           title="GitHub"
-          desc="Kaikki projects"
+          desc="All projects"
           link="https://github.com/Luukalindgren"
         />
         <ProjectItem
