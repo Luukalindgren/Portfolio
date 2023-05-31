@@ -4,6 +4,7 @@ import discord_bottiImg from "../assets/discord_botti.png";
 import githubImg from "../assets/github.png";
 import kisakalenteriImg from "../assets/kisakalenteri.png";
 import LLImg from "../assets/LL.png";
+import BlogImg from "../assets/Blogi.png"
 
 const Projects = () => {
   return (
@@ -16,6 +17,12 @@ const Projects = () => {
           desc="MERN -stack project"
           link="https://luukalindgren.github.io/Competition-calendar/"
         />
+          <ProjectItem
+            img={BlogImg}
+            title="Blog site"
+            desc="Next.js project"
+            link="https://github.com/Luukalindgren/blog-nextjs"
+          />
         <ProjectItem
           img={discord_bottiImg}
           title="Discord bot"
@@ -27,12 +34,6 @@ const Projects = () => {
           title="GitHub"
           desc="All projects"
           link="https://github.com/Luukalindgren"
-        />
-        <ProjectItem
-          img={LLImg}
-          title="Luuka Lindgren -Logo"
-          desc="Illustrator project"
-          link="#projects"
         />
       </div>
     </div>
