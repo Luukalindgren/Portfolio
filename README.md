@@ -1,4 +1,4 @@
-# Blog/Portfolio site
+# Portfolio site
 
 Website created with Vite using React template. Styling is done with Tailwindcss. Made to showcase my resume and other projects.
 
