@@ -1,10 +1,9 @@
 import React from "react";
 import ProjectItem from "./ProjectItem";
-import discord_bottiImg from "../assets/discord_botti.png";
+import kisakalenteriappImg from "../assets/kisakalenteri-app-github.png";
 import githubImg from "../assets/github.png";
 import kisakalenteriImg from "../assets/kisakalenteri.png";
-import LLImg from "../assets/LL.png";
-import BlogImg from "../assets/Blogi.png"
+import BlogImg from "../assets/Blogi.png";
 
 const Projects = () => {
   return (
@@ -17,17 +16,17 @@ const Projects = () => {
           desc="MERN -stack project"
           link="https://luukalindgren.github.io/Competition-calendar/"
         />
-          <ProjectItem
-            img={BlogImg}
-            title="Blog site"
-            desc="Next.js project"
-            link="https://github.com/Luukalindgren/blog-nextjs"
-          />
         <ProjectItem
-          img={discord_bottiImg}
-          title="Discord bot"
-          desc="Python project"
-          link="https://github.com/Luukalindgren/labrakurssi_tyo2"
+          img={BlogImg}
+          title="Blog site"
+          desc="Next.js project"
+          link="https://github.com/Luukalindgren/blog-nextjs"
+        />
+        <ProjectItem
+          img={kisakalenteriappImg}
+          title="Mobile app"
+          desc="React Native project"
+          link="https://github.com/Luukalindgren/kisakalenteri-app"
         />
         <ProjectItem
           img={githubImg}
