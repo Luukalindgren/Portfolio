@@ -1,7 +1,7 @@
-# Blog/Portfolio site
+# Portfolio site
 
-Website created with Vite using React template. Styling is done with Tailwindcss. Made for own use to post updates on my studies and summaries of self-help books read.
+Website created with Vite using React template. Styling is done with Tailwindcss. Made to showcase my resume and other projects.
 
-Site will also be used to showcase my projects and skills, like a portfolio.
+Site is hosted with Azure (Static Web App).
 
 ![Logo](https://github.com/Luukalindgren/Blog/blob/master/client/src/assets/LL.png?raw=true)
