@@ -1,5 +1,5 @@
 import React from "react";
-import IMG_0549_lowres from "../assets/IMG_0549_lowres.jpg";
+import profileImage from "../assets/IMG_0549_lowres.jpg";
 
 const About = () => {
   return (
@@ -8,7 +8,7 @@ const About = () => {
       <div className="flex gap-2 flex-block">
         <img
           className="w-48 h-48 m-auto shadow-2xl rounded-3xl"
-          src={IMG_0549_lowres}
+          src={profileImage}
           alt="Profile Picture"
         />
         <div className="grid flex-auto gap-4 m-auto sm:grid-cols-3 sm:pl-2">
