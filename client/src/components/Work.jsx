@@ -5,6 +5,15 @@ const workData = [
   {
     id: 1,
     title: "Car Driver",
+    company: "Biila Solutions Oy",
+    description:
+      "Same as in Ajoakatemia Oy, just with different company. I currently work here, doing few drives a month. I'm also studying full time, so this is a great way to earn some extra money.",
+    duration: "On going",
+    year: "2023",
+  },
+  {
+    id: 2,
+    title: "Car Driver",
     company: "Ajoakatemia Oy",
     description:
       "Worked as a car driver as a part time job. I was light entrepreneur, so I had to take care of my own drives and billings. Learned a lot about handling own schedules and working independently.",
@@ -12,7 +21,7 @@ const workData = [
     year: "2022",
   },
   {
-    id: 2,
+    id: 3,
     title: "Service Advisor",
     company: "Delta Auto Oy",
     description:
@@ -21,7 +30,7 @@ const workData = [
     year: "2020-2022",
   },
   {
-    id: 3,
+    id: 4,
     title: "Tank Mechanic",
     company: "Finnish Defence Forces",
     description:
@@ -30,7 +39,7 @@ const workData = [
     year: "2019-2020",
   },
   {
-    id: 4,
+    id: 5,
     title: "Different occasional jobs",
     company: "Various companies",
     description:
