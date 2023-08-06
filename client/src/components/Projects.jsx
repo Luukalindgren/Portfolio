@@ -1,10 +1,9 @@
 import React from "react";
 import ProjectItem from "./ProjectItem";
 import kisakalenteriappImg from "../assets/kisakalenteri-app-github.png";
-import githubImg from "../assets/github.png";
 import kisakalenteriImg from "../assets/kisakalenteri.png";
 import BlogImg from "../assets/Blogi.png";
-import LitenDevImg from "../assets/LitenDev_homepage.png"
+import LitenDevImg from "../assets/litendev_homepage.png";
 
 const Projects = () => {
   return (
