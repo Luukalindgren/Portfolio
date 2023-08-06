@@ -3,7 +3,15 @@ import WorkItem from "./WorkItem";
 
 const workData = [
   {
-    id: 1,
+    id: 6,
+    title: "Co-Founder",
+    company: "Liten Group Oy",
+    description: "Co-founded a company with my brother. We are currently developing websites and web applications for our customers. We have other projects in the works as well, like few different e-commerce stores and a renting platform. Trying to learn important entrepreneurship and business skills for the future.",
+    duration: "On going",
+    year: "2023",
+  },
+  {
+    id: 5,
     title: "Car Driver",
     company: "Biila Solutions Oy",
     description:
@@ -12,7 +20,7 @@ const workData = [
     year: "2023",
   },
   {
-    id: 2,
+    id: 4,
     title: "Car Driver",
     company: "Ajoakatemia Oy",
     description:
@@ -30,7 +38,7 @@ const workData = [
     year: "2020-2022",
   },
   {
-    id: 4,
+    id: 2,
     title: "Tank Mechanic",
     company: "Finnish Defence Forces",
     description:
@@ -39,7 +47,7 @@ const workData = [
     year: "2019-2020",
   },
   {
-    id: 5,
+    id: 1,
     title: "Different occasional jobs",
     company: "Various companies",
     description:
