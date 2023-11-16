@@ -32,7 +32,7 @@ const Projects = () => {
           img={LitenDevImg}
           title="LitenDev"
           desc="Webflow project"
-          link="https://liten.dev"
+          link="https://www.liten.dev"
         />
       </div>
       <div className="relative flex items-center justify-center pt-10 ">
