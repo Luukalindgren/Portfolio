@@ -3,6 +3,14 @@ import WorkItem from "./WorkItem";
 
 const workData = [
   {
+    id: 7,
+    title: "Research Assistant / Software Developer",
+    company: "University of Turku",
+    description: "Working as a research assistant at Software Engineering Lab at Faculty of Technology. Main tasks are developing software and helping with other research related tasks. We had the freedom to do the Course Selector project with my coworker from start to finish. We designed, developed, tested and hosted the project by ourselves. Learned a lot about software development, teamwork and research work.",
+    duration: "On going (3 months)",
+    year: "2024",
+  },
+  {
     id: 6,
     title: "Co-Founder",
     company: "Liten Group Oy",

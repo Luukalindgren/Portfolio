@@ -4,6 +4,7 @@ import kisakalenteriappImg from "../assets/kisakalenteri-app-github.png";
 import kisakalenteriImg from "../assets/kisakalenteri.png";
 import BlogImg from "../assets/Blogi.png";
 import LitenDevImg from "../assets/litendev_homepage.png";
+import vicKuljetustahvo from "../assets/vic_kuljetustahvo.png";
 
 const Projects = () => {
   return (
@@ -11,10 +12,16 @@ const Projects = () => {
       <h2>Projects</h2>
       <div className="grid gap-12 sm:grid-cols-2">
         <ProjectItem
-          img={kisakalenteriImg}
-          title="Competition calendar"
-          desc="MERN -stack project"
-          link="https://github.com/Luukalindgren/Competition-calendar"
+          img={vicKuljetustahvo}
+          title="Route Planner"
+          desc="Paid Fullstack project"
+          link="https://github.com/Luukalindgren/VIC_Kuljetustahvo"
+        />
+        <ProjectItem
+          img={LitenDevImg}
+          title="LitenDev"
+          desc="Webflow project"
+          link="https://www.liten.dev"
         />
         <ProjectItem
           img={BlogImg}
@@ -23,16 +30,10 @@ const Projects = () => {
           link="https://github.com/Luukalindgren/blog-nextjs"
         />
         <ProjectItem
-          img={kisakalenteriappImg}
-          title="Mobile app"
-          desc="React Native project"
-          link="https://github.com/Luukalindgren/kisakalenteri-app"
-        />
-        <ProjectItem
-          img={LitenDevImg}
-          title="LitenDev"
-          desc="Webflow project"
-          link="https://www.liten.dev"
+          img={kisakalenteriImg}
+          title="Competition calendar"
+          desc="MERN -stack project"
+          link="https://github.com/Luukalindgren/Competition-calendar"
         />
       </div>
       <div className="relative flex items-center justify-center pt-10 ">
