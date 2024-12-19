@@ -7,7 +7,7 @@ const About = () => {
       <h2>About Me</h2>
       <div className="flex gap-2 flex-block">
         <img
-          className="w-48 h-48 m-auto shadow-2xl rounded-3xl"
+          className="m-auto shadow-2xl w-[156px] h-[156px] rounded-3xl md:w-56 md:h-56 "
           src={profileImage}
           alt="Profile Picture"
         />
