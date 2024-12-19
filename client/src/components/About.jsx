@@ -35,10 +35,10 @@ const About = () => {
           <div>
             <ol className="about-list">
               <h3 className="text-lg font-semibold text-[#4B1300]">Hobbies</h3>
-              <li>Gym</li>
               <li>Reading</li>
-              <li>Disc Golf</li>
+              <li>Golf</li>
               <li>Tech</li>
+              <li>Gym</li>
             </ol>
           </div>
         </div>

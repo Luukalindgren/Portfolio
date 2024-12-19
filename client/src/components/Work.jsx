@@ -7,8 +7,8 @@ const workData = [
     title: "Research Assistant / Software Developer",
     company: "University of Turku",
     description: "Working as a research assistant at Software Engineering Lab at Faculty of Technology. Main tasks are developing software and helping with other research related tasks. We had the freedom to do the Course Selector project with my coworker from start to finish. We designed, developed, tested and hosted the project by ourselves. Learned a lot about software development, teamwork and research work.",
-    duration: "On going (3 months)",
-    year: "2024",
+    duration: "On going",
+    year: "2024-2025",
   },
   {
     id: 6,
@@ -47,10 +47,10 @@ const workData = [
   },
   {
     id: 2,
-    title: "Tank Mechanic",
+    title: "Tank Mechanic Leader",
     company: "Finnish Defence Forces",
     description:
-      "Served my 1 year mandatory military service as a tank mechanic. Top of my class. I was responsible for maintaining and repairing tanks and other military vehicles. I was also responsible for training new recruits and leading them during their service. End of the service I was entitled as a Corporal. Learned a lot about leadership and teamwork.",
+      "Served my 1 year mandatory military service as a tank mechanic leader. Top of my class. I was responsible for maintaining and repairing tanks and other military vehicles. I was also responsible for training new recruits and leading them during their service. End of the service I was entitled as a Corporal. Learned a lot about leadership and teamwork.",
     duration: "1 year",
     year: "2019-2020",
   },

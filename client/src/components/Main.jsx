@@ -19,7 +19,7 @@ const Main = () => {
             <TypeAnimation
               className="pl-1 text-gray-300 text-l"
               sequence={[
-                "BsC",
+                "BSc (Tech)",
                 2000,
                 "Developer",
                 2000,
