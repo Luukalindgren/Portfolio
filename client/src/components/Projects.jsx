@@ -9,6 +9,7 @@ const Projects = () => {
   const [activeProject, setActiveProject] = useState(null);
 
   const toggleOverlay = (title) => {
+    if (window.innerWidth > 1024) return;
     if (activeProject === title) {
       setActiveProject(null);
       return;
@@ -16,7 +17,7 @@ const Projects = () => {
       setActiveProject(title);
     }
   };
-  
+
   return (
     <div id="projects" className="section md:px-20">
       <h2>Projects</h2>

@@ -1,6 +1,10 @@
 import React from "react";
 
 const ProjectItem = ({ img, title, desc, link, showOverlay, onClick }) => {
+  const overlayStyle = showOverlay
+    ? "opacity-100 visible"
+    : "opacity-0 invisible";
+  
   return (
     <div className="relative flex items-center justify-center w-full h-auto shadow-xl shadow-gray-400 rounded-xl group">
       <img
@@ -10,10 +14,9 @@ const ProjectItem = ({ img, title, desc, link, showOverlay, onClick }) => {
         onClick={() => onClick(title)}
       />
       <div
-        className={`absolute inset-0 items-center justify-center text-center transition-all duration-300 bg-gradient-to-r from-gray-200/20 to-[#4B1300]/80 rounded-xl ${
-          showOverlay ? "flex" : "hidden"
-        } md:group-hover:flex`}
+        className={`absolute inset-0 flex items-center justify-center text-center transition-opacity duration-200 ${overlayStyle} bg-gradient-to-r from-gray-200/20 to-[#4B1300]/80 rounded-xl md:group-hover:opacity-100 md:group-hover:visible`}
         onClick={() => onClick(title)}
+        style={{ transition: 'opacity 200ms, visibility 200ms' }}
       >
         <div>
           <h3 className="text-2xl font-bold tracking-wider text-white">
