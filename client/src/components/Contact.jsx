@@ -23,6 +23,7 @@ const Contact = () => {
           setShowModal(true);
         },
         (error) => {
+          alert(error.text);
           console.log(error.text);
         }
       );
@@ -37,7 +38,7 @@ const Contact = () => {
           <div className="flex flex-col">
             <label className="py-2 text-sm uppercase">Name:</label>
             <input
-              className="flex p-3 border-2 border-gray-300 rounded-lg"
+              className="flex p-3 border-2 border-gray-300 rounded-lg focus:outline-none focus:border-[#4B1300] focus:ring-1 focus:ring-[#4B1300]"
               type="text"
               name="user_name"
               placeholder="Bill Gates"
@@ -47,7 +48,7 @@ const Contact = () => {
         <div className="flex flex-col py-2">
           <label className="py-2 text-sm uppercase">Email:</label>
           <input
-            className="flex p-3 border-2 border-gray-300 rounded-lg"
+            className="flex p-3 border-2 border-gray-300 rounded-lg focus:outline-none focus:border-[#4B1300] focus:ring-1 focus:ring-[#4B1300]"
             type="email"
             name="user_email"
             placeholder="bill.gates@microsoft.com"
@@ -56,7 +57,7 @@ const Contact = () => {
         <div className="flex flex-col py-2">
           <label className="py-2 text-sm uppercase">Subject:</label>
           <input
-            className="flex p-3 border-2 border-gray-300 rounded-lg"
+            className="flex p-3 border-2 border-gray-300 rounded-lg focus:outline-none focus:border-[#4B1300] focus:ring-1 focus:ring-[#4B1300]"
             type="text"
             name="subject"
             placeholder="Job Offer 2023"
@@ -65,7 +66,7 @@ const Contact = () => {
         <div className="flex flex-col py-2">
           <label className="py-2 text-sm uppercase">Message:</label>
           <textarea
-            className="p-3 border-2 border-gray-300 rounded-lg"
+            className="p-3 border-2 border-gray-300 rounded-lg focus:outline-none focus:border-[#4B1300] focus:ring-1 focus:ring-[#4B1300]"
             rows="10"
             name="message"
             placeholder="Hello Luuka, we would like to offer you a job at Microsoft..."
@@ -73,7 +74,7 @@ const Contact = () => {
         </div>
         <button
           type="submit"
-          className="bg-[#4B1300] text-white mt-4 w-full p-4 rounded-lg"
+          className="bg-[#4B1300] text-lg font-semibold text-white mt-4 w-full p-4 rounded-lg hover:scale-105 ease-in duration-200"
         >
           Send Email
         </button>
@@ -82,5 +83,4 @@ const Contact = () => {
     </div>
   );
 };
-
 export default Contact;
