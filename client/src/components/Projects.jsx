@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import ProjectItem from "./ProjectItem";
 import kisakalenteriImg from "../assets/kisakalenteri.png";
 import BlogImg from "../assets/Blogi.png";
@@ -6,6 +6,17 @@ import vicKuljetustahvo from "../assets/vic_kuljetustahvo.png";
 import courseSelectorImg from "../assets/course_selector_home_page.png";
 
 const Projects = () => {
+  const [activeProject, setActiveProject] = useState(null);
+
+  const toggleOverlay = (title) => {
+    if (activeProject === title) {
+      setActiveProject(null);
+      return;
+    } else {
+      setActiveProject(title);
+    }
+  };
+  
   return (
     <div id="projects" className="section md:px-20">
       <h2>Projects</h2>
@@ -15,24 +26,32 @@ const Projects = () => {
           title="Course Selector"
           desc="MERN -stack project"
           link="https://github.com/Luukalindgren/course-selector-utu"
+          showOverlay={activeProject === "Course Selector"}
+          onClick={toggleOverlay}
         />
         <ProjectItem
           img={vicKuljetustahvo}
           title="Route Planner"
           desc="Fullstack project (Paid)"
           link="https://github.com/Luukalindgren/VIC_Kuljetustahvo"
+          showOverlay={activeProject === "Route Planner"}
+          onClick={toggleOverlay}
         />
         <ProjectItem
           img={BlogImg}
           title="Blog site"
           desc="Next.js project"
           link="https://github.com/Luukalindgren/blog-nextjs"
+          showOverlay={activeProject === "Blog site"}
+          onClick={toggleOverlay}
         />
         <ProjectItem
           img={kisakalenteriImg}
           title="Competition calendar"
           desc="MERN -stack project"
           link="https://github.com/Luukalindgren/Competition-calendar"
+          showOverlay={activeProject === "Competition calendar"}
+          onClick={toggleOverlay}
         />
       </div>
       <div className="relative flex items-center justify-center pt-10 ">
