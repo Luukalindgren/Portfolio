@@ -1,10 +1,9 @@
 import React from "react";
 import ProjectItem from "./ProjectItem";
-import kisakalenteriappImg from "../assets/kisakalenteri-app-github.png";
 import kisakalenteriImg from "../assets/kisakalenteri.png";
 import BlogImg from "../assets/Blogi.png";
-import LitenDevImg from "../assets/litendev_homepage.png";
 import vicKuljetustahvo from "../assets/vic_kuljetustahvo.png";
+import courseSelectorImg from "../assets/course_selector_home_page.png";
 
 const Projects = () => {
   return (
@@ -12,16 +11,16 @@ const Projects = () => {
       <h2>Projects</h2>
       <div className="grid gap-12 sm:grid-cols-2">
         <ProjectItem
-          img={vicKuljetustahvo}
-          title="Route Planner"
-          desc="Paid Fullstack project"
-          link="https://github.com/Luukalindgren/VIC_Kuljetustahvo"
+          img={courseSelectorImg}
+          title="Course Selector"
+          desc="MERN -stack project"
+          link="https://github.com/Luukalindgren/course-selector-utu"
         />
         <ProjectItem
-          img={LitenDevImg}
-          title="LitenDev"
-          desc="Webflow project"
-          link="https://www.liten.dev"
+          img={vicKuljetustahvo}
+          title="Route Planner"
+          desc="Fullstack project (Paid)"
+          link="https://github.com/Luukalindgren/VIC_Kuljetustahvo"
         />
         <ProjectItem
           img={BlogImg}
@@ -42,7 +41,7 @@ const Projects = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <p className="p-3 text-lg font-semibold text-white bg-[#4B1300] rounded-lg cursor-pointer px-8 relative ">
+          <p className="p-3 text-lg font-semibold text-white bg-[#4B1300] rounded-lg cursor-pointer px-8 relative hover:scale-105 ease-in duration-200 ">
             All projects
           </p>
         </a>
