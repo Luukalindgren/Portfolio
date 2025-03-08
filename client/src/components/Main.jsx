@@ -1,6 +1,6 @@
 import React from "react";
 import { TypeAnimation } from "react-type-animation";
-import { FaInstagram, FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaCommentsDollar, FaGithub, FaLinkedin } from "react-icons/fa";
 
 const Main = () => {
   return (
@@ -13,7 +13,7 @@ const Main = () => {
       <div className="absolute top-0 left-0 w-full h-screen bg-black/50">
         <div className="text-white max-w-[700px] m-auto h-full w-full flex flex-col justify-center items-center ">
           <h1 className="text-4xl font-bold text-white sm:text-5xl">
-            I'm Luuka Lindgren
+            I&apos;m Luuka Lindgren
           </h1>
           <h4 className="flex pt-4 text-2xl sm:text-3xl">
             <TypeAnimation
@@ -44,8 +44,8 @@ const Main = () => {
                 size={30}
               />
             </a>
-            <a href="https://www.instagram.com/luukalindgren/">
-              <FaInstagram
+            <a href="https://litendev.com">
+              <FaCommentsDollar
                 className="m-2 duration-200 ease-in cursor-pointer hover:scale-110"
                 size={30}
               />

@@ -25,7 +25,7 @@ const Projects = () => {
 
   return (
     <div id="projects" className="section md:px-20">
-      <h2>Fullstack Web Projects:</h2>
+      <h2 className="py-12">Fullstack Web Projects</h2>
       <div className="grid gap-12 sm:grid-cols-2">
         <ProjectItem
           img={courseSelectorImg}
@@ -76,8 +76,7 @@ const Projects = () => {
           onClick={toggleOverlay}
         />
       </div>
-      <br />
-      <h2>Low-code projects:</h2>
+      <h2 className="py-12">Low-code projects</h2>
       <div className="grid gap-12 sm:grid-cols-2">
         <ProjectItem
           img={litendevImg}
@@ -105,7 +104,7 @@ const Projects = () => {
         />
       </div>
       <br />
-      <h2>Other projects:</h2>
+      <h2 className="py-12">Other projects</h2>
       <div className="grid gap-12 sm:grid-cols-2"></div>
       <div className="relative flex items-center justify-center pt-10 ">
         <a

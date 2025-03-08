@@ -6,18 +6,17 @@ const ProjectItem = ({ img, title, desc, link, showOverlay, onClick }) => {
     : "opacity-0 invisible";
   
   return (
-    <div className="shadow-xl shadow-gray-400 rounded-xl group">
+    <div className="duration-200 shadow-xl shadow-gray-400 rounded-xl group md:hover:scale-105">
       <div className="relative w-full aspect-video">
         <img
           src={img}
           alt={title}
-          className="absolute inset-0 object-cover w-full h-full transition-opacity duration-200 cursor-pointer rounded-xl"
+          className="absolute inset-0 object-cover w-full h-full cursor-pointer rounded-xl"
           onClick={() => onClick(title)}
         />
         <div
-          className={`absolute inset-0 flex items-center justify-center text-center transition-opacity duration-200 ${overlayStyle} bg-gradient-to-r from-gray-200/20 to-[#4B1300]/80 rounded-xl md:group-hover:opacity-100 md:group-hover:visible`}
+          className={`absolute inset-0 flex items-center justify-center text-center transition-opacity duration-200 ${overlayStyle} bg-gradient-to-r from-gray-500/20 to-[#4B1300]/80 rounded-xl md:group-hover:opacity-100 md:group-hover:visible`}
           onClick={() => onClick(title)}
-          style={{ transition: "opacity 200ms, visibility 200ms" }}
         >
           <div>
             <h3 className="text-2xl font-bold tracking-wider text-white">
