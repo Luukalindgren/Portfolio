@@ -1,9 +1,14 @@
 import React, { useState } from "react";
 import ProjectItem from "./ProjectItem";
-import kisakalenteriImg from "../assets/kisakalenteri.png";
-import BlogImg from "../assets/Blogi.png";
-import vicKuljetustahvo from "../assets/vic_kuljetustahvo.png";
-import courseSelectorImg from "../assets/course_selector_home_page.png";
+import kisakalenteriImg from "../assets/kisakalenteri_thumbnail.webp";
+import BlogImg from "../assets/blog_thumbnail.webp";
+import vicKuljetustahvoImg from "../assets/reittilaskuri_thumbnail.webp";
+import courseSelectorImg from "../assets/kurssivalitsin_thumbnail.webp";
+import aaltocampersImg from "../assets/aaltocampers_thumbnail.webp";
+import variationtoolImg from "../assets/variationtool_thumbnail.webp";
+import maalausliikeilmeImg from "../assets/maalausliikeilme_thumbnail.webp";
+import litendevImg from "../assets/litendev_thumbnail.webp";
+import jobpostsImg from "../assets/jobposts_thumbnail.webp";
 
 const Projects = () => {
   const [activeProject, setActiveProject] = useState(null);
@@ -20,7 +25,7 @@ const Projects = () => {
 
   return (
     <div id="projects" className="section md:px-20">
-      <h2>Projects</h2>
+      <h2>Fullstack Web Projects:</h2>
       <div className="grid gap-12 sm:grid-cols-2">
         <ProjectItem
           img={courseSelectorImg}
@@ -31,7 +36,23 @@ const Projects = () => {
           onClick={toggleOverlay}
         />
         <ProjectItem
-          img={vicKuljetustahvo}
+          img={jobpostsImg}
+          title="Job Postings"
+          desc="Fullstack project (UTU)"
+          link="https://github.com/Luukalindgren/jobposts-utu"
+          showOverlay={activeProject === "Job Postings"}
+          onClick={toggleOverlay}
+        />
+        <ProjectItem
+          img={variationtoolImg}
+          title="Variation Tool"
+          desc="Fullstack project (UTU)"
+          link="https://github.com/Luukalindgren/variation-generator-utu"
+          showOverlay={activeProject === "Variation Tool"}
+          onClick={toggleOverlay}
+        />
+        <ProjectItem
+          img={vicKuljetustahvoImg}
           title="Route Planner"
           desc="Fullstack project (Paid)"
           link="https://github.com/Luukalindgren/VIC_Kuljetustahvo"
@@ -55,6 +76,37 @@ const Projects = () => {
           onClick={toggleOverlay}
         />
       </div>
+      <br />
+      <h2>Low-code projects:</h2>
+      <div className="grid gap-12 sm:grid-cols-2">
+        <ProjectItem
+          img={litendevImg}
+          title="LitenDev Homepage"
+          desc="Wordpress Elementor"
+          link="https://litendev.com/"
+          showOverlay={activeProject === "LitenDev Homepage"}
+          onClick={toggleOverlay}
+        />
+        <ProjectItem
+          img={aaltocampersImg}
+          title="Aaltocampers E-commerce"
+          desc="Shopify Project"
+          link="https://aaltocampers.com/"
+          showOverlay={activeProject === "Aaltocampers E-commerce"}
+          onClick={toggleOverlay}
+        />
+        <ProjectItem
+          img={maalausliikeilmeImg}
+          title="Maalausliikeilme"
+          desc="Wordpress Project (Paid)"
+          link="https://www.maalausliikeilme.fi/"
+          showOverlay={activeProject === "Maalausliikeilme"}
+          onClick={toggleOverlay}
+        />
+      </div>
+      <br />
+      <h2>Other projects:</h2>
+      <div className="grid gap-12 sm:grid-cols-2"></div>
       <div className="relative flex items-center justify-center pt-10 ">
         <a
           href="https://github.com/Luukalindgren"
