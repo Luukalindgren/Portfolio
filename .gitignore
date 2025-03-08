@@ -21,3 +21,6 @@ client/*.local
 *.njsproj
 *.sln
 *.sw?
+
+# Temp
+vite.config.js.timestamp*
