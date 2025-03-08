@@ -7,13 +7,6 @@ import About from "./components/About";
 import Footer from "./components/Footer";
 
 // TODO:
-// DONE (without animation) Add self portrait and some animated circle around it
-// DONE Add section for skills, education, and other stuff about me
-// DONE Change domain to luuka.software (take it from kisakalenteri project)
-// DONE Make contact form work, maybe change it to email link
-// DONE Make repetetive Tailwind classes into components
-// DONE Publish page on Azure
-// DONE Make pop-up for sending email
 // - Add prevention for empty fields in contact form (ex. email field gives error when in wrong format, but not when empty)
 // - Make SEO better, so that it shows up on google search (ex. "Luuka Lindgren" search should show this page)
 // - Refine GitHub repo, finish README.md etc.
@@ -21,6 +14,11 @@ import Footer from "./components/Footer";
 // - Add dark mode
 // - Add comments to code
 // - Add some animations or other fancy stuff, but keep it simple
+//
+// - Write short text to "About Me"
+// - Add drawer, or similar component for projects that opens up and displays all details about the project, include things what you did and learned etc.
+// - Add second link to the "ProjectItem" component that opens the actual website
+// - Add Capstone Spåtalytics project to "Other Projects"
 
 function App() {
   return (
@@ -28,8 +26,8 @@ function App() {
       <Sidenav />
       <Main />
       <About />
-      <Work />
       <Projects />
+      <Work />
       <Contact />
       <Footer />
     </div>
