@@ -42,19 +42,19 @@ const Sidenav = () => {
           </a>
           <a
             onClick={handleNav}
-            href="#work"
-            className="w-[75%] flex justify-center items-center rounded-full shadow-lg bg-gray-100 shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-200"
-          >
-            <GrProjects size={20} />
-            <span className="pl-4">Work</span>
-          </a>
-          <a
-            onClick={handleNav}
             href="#projects"
             className="w-[75%] flex justify-center items-center rounded-full shadow-lg bg-gray-100 shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-200"
           >
-            <AiOutlineProject size={20} />
+            <GrProjects size={20} />
             <span className="pl-4">Projects</span>
+          </a>
+          <a
+            onClick={handleNav}
+            href="#work"
+            className="w-[75%] flex justify-center items-center rounded-full shadow-lg bg-gray-100 shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-200"
+          >
+            <AiOutlineProject size={20} />
+            <span className="pl-4">Work</span>
           </a>
           <a
             onClick={handleNav}
@@ -83,13 +83,13 @@ const Sidenav = () => {
             <BsPerson size={20} />
           </a>
           <a
-            href="#work"
+            href="#projects"
             className="p-4 m-2 duration-200 ease-in bg-gray-100 rounded-full shadow-lg cursor-pointer shadow-gray-600 hover:scale-110"
           >
             <GrProjects size={20} />
           </a>
           <a
-            href="#projects"
+            href="#work"
             className="p-4 m-2 duration-200 ease-in bg-gray-100 rounded-full shadow-lg cursor-pointer shadow-gray-600 hover:scale-110"
           >
             <AiOutlineProject size={20} />
