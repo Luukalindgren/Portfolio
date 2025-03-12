@@ -9,6 +9,7 @@ import variationtoolImg from "../assets/variationtool_thumbnail.webp";
 import maalausliikeilmeImg from "../assets/maalausliikeilme_thumbnail.webp";
 import litendevImg from "../assets/litendev_thumbnail.webp";
 import jobpostsImg from "../assets/jobposts_thumbnail.webp";
+import capstoneImg from "../assets/capstone_thumbnail.webp";
 
 const Projects = () => {
   const [activeProject, setActiveProject] = useState(null);
@@ -30,48 +31,54 @@ const Projects = () => {
         <ProjectItem
           img={courseSelectorImg}
           title="Course Selector"
-          desc="MERN -stack project"
-          link="https://github.com/Luukalindgren/course-selector-utu"
+          desc="React + Express + MongoDB + Linux Server "
+          sourceLink="https://github.com/Luukalindgren/course-selector-utu"
+          secondaryLink="https://kurssivalitsin.utu.fi/"
           showOverlay={activeProject === "Course Selector"}
           onClick={toggleOverlay}
         />
         <ProjectItem
           img={jobpostsImg}
           title="Job Postings"
-          desc="Fullstack project (UTU)"
-          link="https://github.com/Luukalindgren/jobposts-utu"
+          desc="React + FastAPI + MariaDB + Linux Server"
+          sourceLink="https://github.com/Luukalindgren/jobposts-utu"
+          secondaryLink="https://jobposts.swengcyber.utu.fi/"
           showOverlay={activeProject === "Job Postings"}
           onClick={toggleOverlay}
         />
         <ProjectItem
           img={variationtoolImg}
           title="Variation Tool"
-          desc="Fullstack project (UTU)"
-          link="https://github.com/Luukalindgren/variation-generator-utu"
+          desc="Angular + SCSS + Express + Linux Server "
+          sourceLink="https://github.com/Luukalindgren/variation-generator-utu"
+          secondaryLink="https://variationtool.utu.fi/"
           showOverlay={activeProject === "Variation Tool"}
           onClick={toggleOverlay}
         />
         <ProjectItem
           img={vicKuljetustahvoImg}
           title="Route Planner"
-          desc="Fullstack project (Paid)"
-          link="https://github.com/Luukalindgren/VIC_Kuljetustahvo"
+          desc="React + Bootstrap + Supabase + Azure"
+          sourceLink="https://github.com/Luukalindgren/VIC_Kuljetustahvo"
+          secondaryLink="https://vic.kuljetustahvo.fi/"
           showOverlay={activeProject === "Route Planner"}
           onClick={toggleOverlay}
         />
         <ProjectItem
           img={BlogImg}
           title="Blog site"
-          desc="Next.js project"
-          link="https://github.com/Luukalindgren/blog-nextjs"
+          desc="Next.js + Tailwindcss + Supabase"
+          sourceLink="https://github.com/Luukalindgren/blog-nextjs"
+          secondaryLink="https://blog.luuka.codes/"
           showOverlay={activeProject === "Blog site"}
           onClick={toggleOverlay}
         />
         <ProjectItem
           img={kisakalenteriImg}
           title="Competition calendar"
-          desc="MERN -stack project"
-          link="https://github.com/Luukalindgren/Competition-calendar"
+          desc="React + Express + MongoDB"
+          sourceLink="https://github.com/Luukalindgren/Competition-calendar"
+          secondaryLink="https://kisakalenteri.luuka.codes/"
           showOverlay={activeProject === "Competition calendar"}
           onClick={toggleOverlay}
         />
@@ -82,30 +89,39 @@ const Projects = () => {
           img={litendevImg}
           title="LitenDev Homepage"
           desc="Wordpress Elementor"
-          link="https://litendev.com/"
+          secondaryLink="https://litendev.com/"
           showOverlay={activeProject === "LitenDev Homepage"}
           onClick={toggleOverlay}
         />
         <ProjectItem
           img={aaltocampersImg}
-          title="Aaltocampers E-commerce"
-          desc="Shopify Project"
-          link="https://aaltocampers.com/"
-          showOverlay={activeProject === "Aaltocampers E-commerce"}
+          title="Aaltocampers"
+          desc="Shopify E-commerce"
+          secondaryLink="https://aaltocampers.com/"
+          showOverlay={activeProject === "Aaltocampers"}
           onClick={toggleOverlay}
         />
         <ProjectItem
           img={maalausliikeilmeImg}
           title="Maalausliikeilme"
-          desc="Wordpress Project (Paid)"
-          link="https://www.maalausliikeilme.fi/"
+          desc="Wordpress Elementor"
+          secondaryLink="https://www.maalausliikeilme.fi/"
           showOverlay={activeProject === "Maalausliikeilme"}
           onClick={toggleOverlay}
         />
       </div>
       <br />
       <h2 className="py-12">Other projects</h2>
-      <div className="grid gap-12 sm:grid-cols-2"></div>
+      <div className="grid gap-12 sm:grid-cols-2">
+        <ProjectItem
+          img={capstoneImg}
+          title="Spåtalytics"
+          desc="Capstone Project"
+          secondaryLink="https://capstone.utu.fi/en-spatalytics"
+          showOverlay={activeProject === "Spåtalytics"}
+          onClick={toggleOverlay}
+        />
+      </div>
       <div className="relative flex items-center justify-center pt-10 ">
         <a
           href="https://github.com/Luukalindgren"
