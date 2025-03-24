@@ -116,7 +116,7 @@ const Projects = () => {
         <ProjectItem
           img={capstoneImg}
           title="Spåtalytics"
-          desc="Capstone Project"
+          desc="Capstone Project as Team Leader"
           secondaryLink="https://capstone.utu.fi/en-spatalytics"
           showOverlay={activeProject === "Spåtalytics"}
           onClick={toggleOverlay}
