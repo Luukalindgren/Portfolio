@@ -7,7 +7,6 @@ const ProjectItem = ({
   sourceLink,
   secondaryLink,
   showOverlay,
-  onClick,
 }) => {
   const overlayStyle = showOverlay
     ? "opacity-100 visible"

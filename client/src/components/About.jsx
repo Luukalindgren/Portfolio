@@ -1,5 +1,5 @@
 import React from "react";
-import profileImage from "../assets/IMG_0549_lowres.jpg";
+import profileImage from "../assets/profile_picture.jpg";
 
 const About = () => {
   return (
@@ -35,9 +35,9 @@ const About = () => {
           <div>
             <ol className="about-list">
               <h3 className="text-lg font-semibold text-[#4B1300]">Hobbies</h3>
-              <li>Reading</li>
-              <li>Golf</li>
               <li>Tech</li>
+              <li>Golf</li>
+              <li>Reading</li>
               <li>Gym</li>
             </ol>
           </div>

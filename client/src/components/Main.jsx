@@ -1,4 +1,3 @@
-import React from "react";
 import { TypeAnimation } from "react-type-animation";
 import { FaCommentsDollar, FaGithub, FaLinkedin } from "react-icons/fa";
 
@@ -19,9 +18,9 @@ const Main = () => {
             <TypeAnimation
               className="pl-1 text-gray-300 text-l"
               sequence={[
-                "BSc (Tech)",
+                "MSc (Tech)",
                 2000,
-                "Developer",
+                "Fullstack Developer",
                 2000,
                 "Tech Enthusiast",
                 2000,
