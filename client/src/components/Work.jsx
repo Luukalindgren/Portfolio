@@ -1,4 +1,3 @@
-import React from "react";
 import WorkItem from "./WorkItem";
 
 const workData = [
@@ -6,8 +5,8 @@ const workData = [
     id: 7,
     title: "Research Assistant / Software Developer",
     company: "University of Turku",
-    description: "Working as a research assistant at Software Engineering Lab at Faculty of Technology. Main tasks are developing software and helping with other research related tasks. We had the freedom to do the Course Selector project with my coworker from start to finish. We designed, developed, tested and hosted the project by ourselves. Learned a lot about software development, teamwork and research work.",
-    duration: "On going",
+    description: "Working as a research assistant at Software Engineering Lab at Faculty of Technology. Main tasks are developing software and helping with other research related tasks. We had the freedom to do the Course Selector project with my coworker from start to finish. We designed, developed, tested and hosted the project by ourselves. Learned a lot about software development, teamwork and research work. Finished my MSc studies during this time.",
+    duration: "1 year",
     year: "2024-2025",
   },
   {
@@ -16,7 +15,7 @@ const workData = [
     company: "Liten Group Oy",
     description: "Co-founded a company with my brother. We are currently developing websites and web applications for our customers. We have other projects in the works as well, like few different e-commerce stores and a renting platform. Trying to learn important entrepreneurship and business skills for the future.",
     duration: "On going",
-    year: "2023",
+    year: "2023-Present",
   },
   {
     id: 5,
@@ -24,7 +23,7 @@ const workData = [
     company: "Biila Solutions Oy",
     description:
       "Same as in Ajoakatemia Oy, just with different company. I currently work here, doing few drives a month. I'm also studying full time, so this is a great way to earn some extra money.",
-    duration: "On going",
+    duration: "1 year",
     year: "2023",
   },
   {
